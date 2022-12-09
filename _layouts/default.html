@@ -84,6 +84,14 @@
                 {% assign first_entry = false %}
               {% endif %}
 
+              {% if post.article %}
+                {% unless first_entry %}
+                  &nbsp/&nbsp
+                {% endunless %}
+                <a href="{{post.article}}">Article</a>
+                {% assign first_entry = false %}
+              {% endif %}
+
               {% if post.blog %}
                 {% unless first_entry %}
                   &nbsp/&nbsp
