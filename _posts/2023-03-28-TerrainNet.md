@@ -6,7 +6,7 @@ image: /media/TerrainNet/TerrainNet.png
 categories: research
 author: "Xiangyun Meng"
 authors: "Xiangyun Meng, Nathan Hatch, Alexander Lambert, Anqi Li, <strong>Nolan Wagener</strong>, Matthew Schmittle, JoonHo Lee, Wentao Yuan, Zoey Chen, Samuel Deng, Greg Okopal, Dieter Fox, Byron Boots, Amirreza Shaban"
-venue: arXiv
+venue: "Robotics: Science and Systems (RSS)"
 paper: https://arxiv.org/abs/2303.15771
 website: https://sites.google.com/view/visual-terrain-modeling
 ---
