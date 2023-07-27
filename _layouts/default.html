@@ -140,6 +140,14 @@
                 {% assign first_entry = false %}
               {% endif %}
 
+              {% if post.colab %}
+                {% unless first_entry %}
+                  &nbsp/&nbsp
+                {% endunless %}
+                <a href="{{post.colab}}">Colab</a>
+                {% assign first_entry = false %}
+              {% endif %}
+
               {% if post.dataset %}
                 {% unless first_entry %}
                   &nbsp/&nbsp
