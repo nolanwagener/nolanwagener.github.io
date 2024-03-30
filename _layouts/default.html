@@ -43,10 +43,6 @@
                 <a href="https://scholar.google.com/citations?user=SgGIYH0AAAAJ">Google Scholar</a> &nbsp;/&nbsp;
                 <a href="https://www.linkedin.com/in/nwagener">LinkedIn</a>
               </p>
-              <p style="text-align:center">
-                <a href="/media/thesis.pdf">Thesis</a> &nbsp;/&nbsp;
-                <a href="https://www.youtube.com/watch?v=cOEIdksljEY">Thesis Talk</a>
-              </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
               <img style="width:100%;max-width:100%" alt="profile photo" src="media/headshot.jpg">
@@ -88,7 +84,15 @@
                 <a href="{{post.paper}}">Paper</a>
                 {% assign first_entry = false %}
               {% endif %}
-              
+
+              {% if post.thesis %}
+                {% unless first_entry %}
+                  &nbsp/&nbsp
+                {% endunless %}
+                <a href="{{post.thesis}}">Thesis</a>
+                {% assign first_entry = false %}
+              {% endif %}
+
               {% if post.website %}
                 {% unless first_entry %}
                   &nbsp/&nbsp
@@ -128,6 +132,15 @@
                 <a href="{{post.talk}}">Talk</a>
                 {% assign first_entry = false %}
               {% endif %}
+
+              {% if post.defense %}
+                {% unless first_entry %}
+                  &nbsp/&nbsp
+                {% endunless %}
+                <a href="{{post.defense}}">Defense</a>
+                {% assign first_entry = false %}
+              {% endif %}
+
 
               {% if post.short_talk %}
                 {% unless first_entry %}
